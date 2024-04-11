@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9062577212052BE00324732 /* VehicleHumvee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9062576212052BE00324732 /* VehicleHumvee.swift */; };
+		A9062578212052BE00324732 /* VehicleHumvee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9062576212052BE00324732 /* VehicleHumvee.swift */; };
+		A91FCF3021747560000225E5 /* WheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF2F21747560000225E5 /* WheelSuspensionBuilder.swift */; };
+		A91FCF3421747592000225E5 /* ChasisFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF3321747592000225E5 /* ChasisFactory.swift */; };
+		A91FCF36217475A2000225E5 /* SuspentionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF35217475A2000225E5 /* SuspentionFactory.swift */; };
+		A91FCF37217475A6000225E5 /* ChasisFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF3321747592000225E5 /* ChasisFactory.swift */; };
+		A91FCF38217475A8000225E5 /* SuspentionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF35217475A2000225E5 /* SuspentionFactory.swift */; };
+		A91FCF3A217475BC000225E5 /* WheelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF39217475BC000225E5 /* WheelFactory.swift */; };
+		A91FCF3B217475BC000225E5 /* WheelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF39217475BC000225E5 /* WheelFactory.swift */; };
+		A91FCF3C217475D3000225E5 /* WheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF2F21747560000225E5 /* WheelSuspensionBuilder.swift */; };
+		A91FCF3E2174783D000225E5 /* JeepWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF3D2174783D000225E5 /* JeepWheelSuspensionBuilder.swift */; };
+		A91FCF3F2174783D000225E5 /* JeepWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF3D2174783D000225E5 /* JeepWheelSuspensionBuilder.swift */; };
+		A91FCF42217479AC000225E5 /* JeepWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF41217479AC000225E5 /* JeepWheelBuilder.swift */; };
+		A91FCF43217479AC000225E5 /* JeepWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF41217479AC000225E5 /* JeepWheelBuilder.swift */; };
+		A91FCF4521747AE5000225E5 /* JeepChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF4421747AE5000225E5 /* JeepChasisBuilder.swift */; };
+		A91FCF4621747AE5000225E5 /* JeepChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF4421747AE5000225E5 /* JeepChasisBuilder.swift */; };
+		A91FCF48217484BA000225E5 /* WheelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF47217484BA000225E5 /* WheelNode.swift */; };
+		A91FCF49217484BA000225E5 /* WheelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FCF47217484BA000225E5 /* WheelNode.swift */; };
+		A9300AE1216E5ECF00AF1C06 /* WheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9300AE0216E5ECF00AF1C06 /* WheelBuilder.swift */; };
+		A9300AE6216E5F5300AF1C06 /* VehicleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC1B210D9DAE00D0C07E /* VehicleProtocol.swift */; };
+		A93E9E38240E202A0047AFA4 /* GameLevel.sks in Resources */ = {isa = PBXBuildFile; fileRef = A93E9E37240E202A0047AFA4 /* GameLevel.sks */; };
+		A94842B821734181009AA789 /* WheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9300AE0216E5ECF00AF1C06 /* WheelBuilder.swift */; };
+		A95C9EEE2178DAA30089548C /* JeepEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EED2178DAA30089548C /* JeepEngineConfiguration.swift */; };
+		A95C9EF02178DAC50089548C /* EngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EEF2178DAC50089548C /* EngineConfiguration.swift */; };
+		A95C9EF12178DAD40089548C /* EngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EEF2178DAC50089548C /* EngineConfiguration.swift */; };
+		A95C9EF22178DAD80089548C /* JeepEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EED2178DAA30089548C /* JeepEngineConfiguration.swift */; };
+		A95C9EF42178DAE80089548C /* HumveeEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EF32178DAE80089548C /* HumveeEngineConfiguration.swift */; };
+		A95C9EF52178DAE80089548C /* HumveeEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EF32178DAE80089548C /* HumveeEngineConfiguration.swift */; };
+		A95C9EF82178DB130089548C /* SchoolBusEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EF72178DB130089548C /* SchoolBusEngineConfiguration.swift */; };
+		A95C9EF92178DB130089548C /* SchoolBusEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EF72178DB130089548C /* SchoolBusEngineConfiguration.swift */; };
+		A95C9EFB2178DB440089548C /* SchoolBusChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EFA2178DB440089548C /* SchoolBusChasisBuilder.swift */; };
+		A95C9EFC2178DB440089548C /* SchoolBusChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EFA2178DB440089548C /* SchoolBusChasisBuilder.swift */; };
+		A95C9EFE2178DBD50089548C /* SchoolBusWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EFD2178DBD50089548C /* SchoolBusWheelBuilder.swift */; };
+		A95C9EFF2178DBD50089548C /* SchoolBusWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9EFD2178DBD50089548C /* SchoolBusWheelBuilder.swift */; };
+		A95C9F012178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9F002178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift */; };
+		A95C9F022178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9F002178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift */; };
+		A95C9F042178DC720089548C /* SchoolBusWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9F032178DC720089548C /* SchoolBusWheelsLocationBuilder.swift */; };
+		A95C9F052178DC720089548C /* SchoolBusWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C9F032178DC720089548C /* SchoolBusWheelsLocationBuilder.swift */; };
+		A968FFB821808300007D8A8A /* SoftPhysicsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968FFB721808300007D8A8A /* SoftPhysicsWheel.swift */; };
+		A968FFB921808300007D8A8A /* SoftPhysicsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968FFB721808300007D8A8A /* SoftPhysicsWheel.swift */; };
+		A983E6D22179B7AC009DBA43 /* ChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983E6D12179B7AC009DBA43 /* ChainNode.swift */; };
+		A983E6D32179B7AC009DBA43 /* ChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983E6D12179B7AC009DBA43 /* ChainNode.swift */; };
+		A983E6D52179B837009DBA43 /* RopeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983E6D42179B837009DBA43 /* RopeNode.swift */; };
+		A983E6D62179B837009DBA43 /* RopeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983E6D42179B837009DBA43 /* RopeNode.swift */; };
+		A9844437217A03AD00CD5B09 /* SKVehicleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844436217A03AD00CD5B09 /* SKVehicleBuilder.swift */; };
+		A9844438217A03AD00CD5B09 /* SKVehicleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844436217A03AD00CD5B09 /* SKVehicleBuilder.swift */; };
+		A984443B217A127400CD5B09 /* BalistaEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984443A217A127400CD5B09 /* BalistaEngineConfiguration.swift */; };
+		A984443C217A127400CD5B09 /* BalistaEngineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984443A217A127400CD5B09 /* BalistaEngineConfiguration.swift */; };
+		A984443E217A129A00CD5B09 /* BalistaChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984443D217A129A00CD5B09 /* BalistaChasisBuilder.swift */; };
+		A984443F217A129A00CD5B09 /* BalistaChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984443D217A129A00CD5B09 /* BalistaChasisBuilder.swift */; };
+		A9844441217A130200CD5B09 /* BalistaWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844440217A130200CD5B09 /* BalistaWheelBuilder.swift */; };
+		A9844442217A130200CD5B09 /* BalistaWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844440217A130200CD5B09 /* BalistaWheelBuilder.swift */; };
+		A9844444217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844443217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift */; };
+		A9844445217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844443217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift */; };
+		A9844447217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844446217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift */; };
+		A9844448217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9844446217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift */; };
+		A987EBF0210D9B2F00D0C07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EBEF210D9B2F00D0C07E /* AppDelegate.swift */; };
+		A987EBF2210D9B2F00D0C07E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EBF1210D9B2F00D0C07E /* GameViewController.swift */; };
+		A987EBF5210D9B2F00D0C07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A987EBF3210D9B2F00D0C07E /* Main.storyboard */; };
+		A987EBF8210D9B2F00D0C07E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A987EBF6210D9B2F00D0C07E /* LaunchScreen.storyboard */; };
+		A987EC01210D9B2F00D0C07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC00210D9B2F00D0C07E /* AppDelegate.swift */; };
+		A987EC03210D9B2F00D0C07E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC02210D9B2F00D0C07E /* GameViewController.swift */; };
+		A987EC06210D9B2F00D0C07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A987EC04210D9B2F00D0C07E /* Main.storyboard */; };
+		A987EC08210D9B2F00D0C07E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A987EBE4210D9B2E00D0C07E /* Actions.sks */; };
+		A987EC09210D9B2F00D0C07E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A987EBE4210D9B2E00D0C07E /* Actions.sks */; };
+		A987EC19210D9BA600D0C07E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A987EC18210D9BA600D0C07E /* .gitignore */; };
+		A987EC1A210D9BA600D0C07E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A987EC18210D9BA600D0C07E /* .gitignore */; };
+		A987EC1C210D9DAE00D0C07E /* VehicleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC1B210D9DAE00D0C07E /* VehicleProtocol.swift */; };
+		A987EC1F210E123900D0C07E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC1E210E123900D0C07E /* GameScene.swift */; };
+		A987EC20210E123900D0C07E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC1E210E123900D0C07E /* GameScene.swift */; };
+		A987EC22210E124700D0C07E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A987EC21210E124700D0C07E /* GameScene.sks */; };
+		A987EC23210E124700D0C07E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A987EC21210E124700D0C07E /* GameScene.sks */; };
+		A987EC25210E126200D0C07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A987EC24210E125F00D0C07E /* Assets.xcassets */; };
+		A987EC26210E126200D0C07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A987EC24210E125F00D0C07E /* Assets.xcassets */; };
+		A987EC28210E130900D0C07E /* VehicleJeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC27210E130900D0C07E /* VehicleJeep.swift */; };
+		A987EC29210E130900D0C07E /* VehicleJeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC27210E130900D0C07E /* VehicleJeep.swift */; };
+		A987EC2C210E133300D0C07E /* TrigonometryExtnesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC2B210E133300D0C07E /* TrigonometryExtnesions.swift */; };
+		A987EC2D210E133300D0C07E /* TrigonometryExtnesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987EC2B210E133300D0C07E /* TrigonometryExtnesions.swift */; };
+		A98C56CF217F730E00EB3826 /* BalistaVehicle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A98C56CE217F730E00EB3826 /* BalistaVehicle.sks */; };
+		A98C56D0217F730E00EB3826 /* BalistaVehicle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A98C56CE217F730E00EB3826 /* BalistaVehicle.sks */; };
+		A99156A72173422800CFB514 /* ChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156A62173422800CFB514 /* ChasisBuilder.swift */; };
+		A99156A82173423000CFB514 /* ChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156A62173422800CFB514 /* ChasisBuilder.swift */; };
+		A99156AD21736D1300CFB514 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156AC21736D1300CFB514 /* Vehicle.swift */; };
+		A99156AE21736D2000CFB514 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156AC21736D1300CFB514 /* Vehicle.swift */; };
+		A99156B021736D2D00CFB514 /* ChasisNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156AF21736D2D00CFB514 /* ChasisNode.swift */; };
+		A99156B121736D2D00CFB514 /* ChasisNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156AF21736D2D00CFB514 /* ChasisNode.swift */; };
+		A99156B321736D4200CFB514 /* PhysicsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B221736D4200CFB514 /* PhysicsWheel.swift */; };
+		A99156B421736D4200CFB514 /* PhysicsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B221736D4200CFB514 /* PhysicsWheel.swift */; };
+		A99156B621736D5300CFB514 /* WheelSuspension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B521736D5300CFB514 /* WheelSuspension.swift */; };
+		A99156B721736D5300CFB514 /* WheelSuspension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B521736D5300CFB514 /* WheelSuspension.swift */; };
+		A99156B921736E2200CFB514 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B821736E2200CFB514 /* VehicleType.swift */; };
+		A99156BA21736E2200CFB514 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156B821736E2200CFB514 /* VehicleType.swift */; };
+		A99156BC21736E4B00CFB514 /* VehicleAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156BB21736E4B00CFB514 /* VehicleAbstractFactory.swift */; };
+		A99156BD21736E4B00CFB514 /* VehicleAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99156BB21736E4B00CFB514 /* VehicleAbstractFactory.swift */; };
+		A9FE2A9F21774A0700383D0F /* WheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2A9E21774A0700383D0F /* WheelsLocationBuilder.swift */; };
+		A9FE2AA021774A0700383D0F /* WheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2A9E21774A0700383D0F /* WheelsLocationBuilder.swift */; };
+		A9FE2AA221774AAC00383D0F /* JeepWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA121774AAC00383D0F /* JeepWheelsLocationBuilder.swift */; };
+		A9FE2AA321774AAC00383D0F /* JeepWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA121774AAC00383D0F /* JeepWheelsLocationBuilder.swift */; };
+		A9FE2AA521774E3A00383D0F /* WheelLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA421774E3A00383D0F /* WheelLocation.swift */; };
+		A9FE2AA621774E3A00383D0F /* WheelLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA421774E3A00383D0F /* WheelLocation.swift */; };
+		A9FE2AA92177608600383D0F /* HumveeWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA82177608600383D0F /* HumveeWheelSuspensionBuilder.swift */; };
+		A9FE2AAA2177608600383D0F /* HumveeWheelSuspensionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AA82177608600383D0F /* HumveeWheelSuspensionBuilder.swift */; };
+		A9FE2AAC217760EA00383D0F /* HumveeWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AAB217760EA00383D0F /* HumveeWheelBuilder.swift */; };
+		A9FE2AAD217760EA00383D0F /* HumveeWheelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AAB217760EA00383D0F /* HumveeWheelBuilder.swift */; };
+		A9FE2AAF2177611600383D0F /* HumveeChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AAE2177611600383D0F /* HumveeChasisBuilder.swift */; };
+		A9FE2AB02177611600383D0F /* HumveeChasisBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AAE2177611600383D0F /* HumveeChasisBuilder.swift */; };
+		A9FE2AB22177618E00383D0F /* HumveeWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AB12177618E00383D0F /* HumveeWheelsLocationBuilder.swift */; };
+		A9FE2AB32177618E00383D0F /* HumveeWheelsLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AB12177618E00383D0F /* HumveeWheelsLocationBuilder.swift */; };
+		A9FE2AB5217765DE00383D0F /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AB4217765DE00383D0F /* Engine.swift */; };
+		A9FE2AB6217765DE00383D0F /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE2AB4217765DE00383D0F /* Engine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9062576212052BE00324732 /* VehicleHumvee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleHumvee.swift; sourceTree = "<group>"; };
+		A91FCF2F21747560000225E5 /* WheelSuspensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelSuspensionBuilder.swift; sourceTree = "<group>"; };
+		A91FCF3321747592000225E5 /* ChasisFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasisFactory.swift; sourceTree = "<group>"; };
+		A91FCF35217475A2000225E5 /* SuspentionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspentionFactory.swift; sourceTree = "<group>"; };
+		A91FCF39217475BC000225E5 /* WheelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelFactory.swift; sourceTree = "<group>"; };
+		A91FCF3D2174783D000225E5 /* JeepWheelSuspensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepWheelSuspensionBuilder.swift; sourceTree = "<group>"; };
+		A91FCF41217479AC000225E5 /* JeepWheelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepWheelBuilder.swift; sourceTree = "<group>"; };
+		A91FCF4421747AE5000225E5 /* JeepChasisBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepChasisBuilder.swift; sourceTree = "<group>"; };
+		A91FCF47217484BA000225E5 /* WheelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelNode.swift; sourceTree = "<group>"; };
+		A9300AE0216E5ECF00AF1C06 /* WheelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelBuilder.swift; sourceTree = "<group>"; };
+		A93E9E37240E202A0047AFA4 /* GameLevel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameLevel.sks; sourceTree = "<group>"; };
+		A95C9EED2178DAA30089548C /* JeepEngineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepEngineConfiguration.swift; sourceTree = "<group>"; };
+		A95C9EEF2178DAC50089548C /* EngineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineConfiguration.swift; sourceTree = "<group>"; };
+		A95C9EF32178DAE80089548C /* HumveeEngineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumveeEngineConfiguration.swift; sourceTree = "<group>"; };
+		A95C9EF72178DB130089548C /* SchoolBusEngineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusEngineConfiguration.swift; sourceTree = "<group>"; };
+		A95C9EFA2178DB440089548C /* SchoolBusChasisBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusChasisBuilder.swift; sourceTree = "<group>"; };
+		A95C9EFD2178DBD50089548C /* SchoolBusWheelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusWheelBuilder.swift; sourceTree = "<group>"; };
+		A95C9F002178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusWheelSuspensionBuilder.swift; sourceTree = "<group>"; };
+		A95C9F032178DC720089548C /* SchoolBusWheelsLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusWheelsLocationBuilder.swift; sourceTree = "<group>"; };
+		A968FFB721808300007D8A8A /* SoftPhysicsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftPhysicsWheel.swift; sourceTree = "<group>"; };
+		A983E6D12179B7AC009DBA43 /* ChainNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainNode.swift; sourceTree = "<group>"; };
+		A983E6D42179B837009DBA43 /* RopeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeNode.swift; sourceTree = "<group>"; };
+		A9844436217A03AD00CD5B09 /* SKVehicleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVehicleBuilder.swift; sourceTree = "<group>"; };
+		A984443A217A127400CD5B09 /* BalistaEngineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalistaEngineConfiguration.swift; sourceTree = "<group>"; };
+		A984443D217A129A00CD5B09 /* BalistaChasisBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalistaChasisBuilder.swift; sourceTree = "<group>"; };
+		A9844440217A130200CD5B09 /* BalistaWheelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalistaWheelBuilder.swift; sourceTree = "<group>"; };
+		A9844443217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalistaWheelSuspensionBuilder.swift; sourceTree = "<group>"; };
+		A9844446217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalistaWheelsLocationBuilder.swift; sourceTree = "<group>"; };
+		A987EBE4210D9B2E00D0C07E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A987EBEC210D9B2F00D0C07E /* PhysicsVehicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsVehicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A987EBEF210D9B2F00D0C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A987EBF1210D9B2F00D0C07E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A987EBF4210D9B2F00D0C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A987EBF7210D9B2F00D0C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A987EBF9210D9B2F00D0C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A987EBFE210D9B2F00D0C07E /* PhysicsVehicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsVehicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A987EC00210D9B2F00D0C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A987EC02210D9B2F00D0C07E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A987EC05210D9B2F00D0C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A987EC07210D9B2F00D0C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A987EC18210D9BA600D0C07E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A987EC1B210D9DAE00D0C07E /* VehicleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleProtocol.swift; sourceTree = "<group>"; };
+		A987EC1E210E123900D0C07E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A987EC21210E124700D0C07E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A987EC24210E125F00D0C07E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A987EC27210E130900D0C07E /* VehicleJeep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleJeep.swift; sourceTree = "<group>"; };
+		A987EC2B210E133300D0C07E /* TrigonometryExtnesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigonometryExtnesions.swift; sourceTree = "<group>"; };
+		A98C56CE217F730E00EB3826 /* BalistaVehicle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BalistaVehicle.sks; sourceTree = "<group>"; };
+		A99156A62173422800CFB514 /* ChasisBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasisBuilder.swift; sourceTree = "<group>"; };
+		A99156AC21736D1300CFB514 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		A99156AF21736D2D00CFB514 /* ChasisNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasisNode.swift; sourceTree = "<group>"; };
+		A99156B221736D4200CFB514 /* PhysicsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsWheel.swift; sourceTree = "<group>"; };
+		A99156B521736D5300CFB514 /* WheelSuspension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelSuspension.swift; sourceTree = "<group>"; };
+		A99156B821736E2200CFB514 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
+		A99156BB21736E4B00CFB514 /* VehicleAbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAbstractFactory.swift; sourceTree = "<group>"; };
+		A9FE2A9E21774A0700383D0F /* WheelsLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelsLocationBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AA121774AAC00383D0F /* JeepWheelsLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepWheelsLocationBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AA421774E3A00383D0F /* WheelLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelLocation.swift; sourceTree = "<group>"; };
+		A9FE2AA82177608600383D0F /* HumveeWheelSuspensionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumveeWheelSuspensionBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AAB217760EA00383D0F /* HumveeWheelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumveeWheelBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AAE2177611600383D0F /* HumveeChasisBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumveeChasisBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AB12177618E00383D0F /* HumveeWheelsLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumveeWheelsLocationBuilder.swift; sourceTree = "<group>"; };
+		A9FE2AB4217765DE00383D0F /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A987EBE9210D9B2F00D0C07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A987EBFB210D9B2F00D0C07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91FCF3121747579000225E5 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				A9844439217A124500CD5B09 /* Balista */,
+				A95C9EF62178DAFD0089548C /* School Bus */,
+				A9FE2AA72177606900383D0F /* Humvee */,
+				A91FCF4021747841000225E5 /* Jeep */,
+				A9FE2A9E21774A0700383D0F /* WheelsLocationBuilder.swift */,
+				A91FCF2F21747560000225E5 /* WheelSuspensionBuilder.swift */,
+				A9300AE0216E5ECF00AF1C06 /* WheelBuilder.swift */,
+				A99156A62173422800CFB514 /* ChasisBuilder.swift */,
+				A9FE2AA421774E3A00383D0F /* WheelLocation.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		A91FCF3221747586000225E5 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A99156BB21736E4B00CFB514 /* VehicleAbstractFactory.swift */,
+				A91FCF3321747592000225E5 /* ChasisFactory.swift */,
+				A91FCF35217475A2000225E5 /* SuspentionFactory.swift */,
+				A91FCF39217475BC000225E5 /* WheelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		A91FCF4021747841000225E5 /* Jeep */ = {
+			isa = PBXGroup;
+			children = (
+				A91FCF3D2174783D000225E5 /* JeepWheelSuspensionBuilder.swift */,
+				A91FCF41217479AC000225E5 /* JeepWheelBuilder.swift */,
+				A91FCF4421747AE5000225E5 /* JeepChasisBuilder.swift */,
+				A9FE2AA121774AAC00383D0F /* JeepWheelsLocationBuilder.swift */,
+				A95C9EED2178DAA30089548C /* JeepEngineConfiguration.swift */,
+			);
+			path = Jeep;
+			sourceTree = "<group>";
+		};
+		A9300ADF216E5EBB00AF1C06 /* Vehicle Components */ = {
+			isa = PBXGroup;
+			children = (
+				A91FCF3221747586000225E5 /* Factories */,
+				A91FCF3121747579000225E5 /* Builders */,
+				A99156AC21736D1300CFB514 /* Vehicle.swift */,
+				A99156AF21736D2D00CFB514 /* ChasisNode.swift */,
+				A99156B221736D4200CFB514 /* PhysicsWheel.swift */,
+				A99156B521736D5300CFB514 /* WheelSuspension.swift */,
+				A99156B821736E2200CFB514 /* VehicleType.swift */,
+				A91FCF47217484BA000225E5 /* WheelNode.swift */,
+				A9FE2AB4217765DE00383D0F /* Engine.swift */,
+				A95C9EEF2178DAC50089548C /* EngineConfiguration.swift */,
+			);
+			path = "Vehicle Components";
+			sourceTree = "<group>";
+		};
+		A95C9EF62178DAFD0089548C /* School Bus */ = {
+			isa = PBXGroup;
+			children = (
+				A95C9EF72178DB130089548C /* SchoolBusEngineConfiguration.swift */,
+				A95C9EFA2178DB440089548C /* SchoolBusChasisBuilder.swift */,
+				A95C9EFD2178DBD50089548C /* SchoolBusWheelBuilder.swift */,
+				A95C9F002178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift */,
+				A95C9F032178DC720089548C /* SchoolBusWheelsLocationBuilder.swift */,
+			);
+			path = "School Bus";
+			sourceTree = "<group>";
+		};
+		A983E6D02179B78D009DBA43 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A983E6D12179B7AC009DBA43 /* ChainNode.swift */,
+				A983E6D42179B837009DBA43 /* RopeNode.swift */,
+				A9844436217A03AD00CD5B09 /* SKVehicleBuilder.swift */,
+				A98C56CE217F730E00EB3826 /* BalistaVehicle.sks */,
+				A968FFB721808300007D8A8A /* SoftPhysicsWheel.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		A9844439217A124500CD5B09 /* Balista */ = {
+			isa = PBXGroup;
+			children = (
+				A984443A217A127400CD5B09 /* BalistaEngineConfiguration.swift */,
+				A984443D217A129A00CD5B09 /* BalistaChasisBuilder.swift */,
+				A9844440217A130200CD5B09 /* BalistaWheelBuilder.swift */,
+				A9844443217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift */,
+				A9844446217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift */,
+			);
+			path = Balista;
+			sourceTree = "<group>";
+		};
+		A987EBDE210D9B2E00D0C07E = {
+			isa = PBXGroup;
+			children = (
+				A987EC18210D9BA600D0C07E /* .gitignore */,
+				A987EBE3210D9B2E00D0C07E /* PhysicsVehicle */,
+				A987EBEE210D9B2F00D0C07E /* PhysicsVehicle iOS */,
+				A987EBFF210D9B2F00D0C07E /* PhysicsVehicle macOS */,
+				A987EBED210D9B2F00D0C07E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A987EBE3210D9B2E00D0C07E /* PhysicsVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				A983E6D02179B78D009DBA43 /* Bridge */,
+				A9300ADF216E5EBB00AF1C06 /* Vehicle Components */,
+				A987EC2A210E132100D0C07E /* Extensions */,
+				A987EBE4210D9B2E00D0C07E /* Actions.sks */,
+				A93E9E37240E202A0047AFA4 /* GameLevel.sks */,
+				A987EC21210E124700D0C07E /* GameScene.sks */,
+				A987EC1E210E123900D0C07E /* GameScene.swift */,
+				A987EC24210E125F00D0C07E /* Assets.xcassets */,
+				A9FE2AB72177711200383D0F /* Legacy */,
+			);
+			path = PhysicsVehicle;
+			sourceTree = "<group>";
+		};
+		A987EBED210D9B2F00D0C07E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A987EBEC210D9B2F00D0C07E /* PhysicsVehicle.app */,
+				A987EBFE210D9B2F00D0C07E /* PhysicsVehicle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A987EBEE210D9B2F00D0C07E /* PhysicsVehicle iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A987EBEF210D9B2F00D0C07E /* AppDelegate.swift */,
+				A987EBF1210D9B2F00D0C07E /* GameViewController.swift */,
+				A987EBF3210D9B2F00D0C07E /* Main.storyboard */,
+				A987EBF6210D9B2F00D0C07E /* LaunchScreen.storyboard */,
+				A987EBF9210D9B2F00D0C07E /* Info.plist */,
+			);
+			path = "PhysicsVehicle iOS";
+			sourceTree = "<group>";
+		};
+		A987EBFF210D9B2F00D0C07E /* PhysicsVehicle macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A987EC00210D9B2F00D0C07E /* AppDelegate.swift */,
+				A987EC02210D9B2F00D0C07E /* GameViewController.swift */,
+				A987EC04210D9B2F00D0C07E /* Main.storyboard */,
+				A987EC07210D9B2F00D0C07E /* Info.plist */,
+			);
+			path = "PhysicsVehicle macOS";
+			sourceTree = "<group>";
+		};
+		A987EC2A210E132100D0C07E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A987EC2B210E133300D0C07E /* TrigonometryExtnesions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9FE2AA72177606900383D0F /* Humvee */ = {
+			isa = PBXGroup;
+			children = (
+				A9FE2AA82177608600383D0F /* HumveeWheelSuspensionBuilder.swift */,
+				A9FE2AAB217760EA00383D0F /* HumveeWheelBuilder.swift */,
+				A9FE2AAE2177611600383D0F /* HumveeChasisBuilder.swift */,
+				A9FE2AB12177618E00383D0F /* HumveeWheelsLocationBuilder.swift */,
+				A95C9EF32178DAE80089548C /* HumveeEngineConfiguration.swift */,
+			);
+			path = Humvee;
+			sourceTree = "<group>";
+		};
+		A9FE2AB72177711200383D0F /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				A987EC27210E130900D0C07E /* VehicleJeep.swift */,
+				A9062576212052BE00324732 /* VehicleHumvee.swift */,
+				A987EC1B210D9DAE00D0C07E /* VehicleProtocol.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A987EBEB210D9B2F00D0C07E /* PhysicsVehicle iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A987EC12210D9B2F00D0C07E /* Build configuration list for PBXNativeTarget "PhysicsVehicle iOS" */;
+			buildPhases = (
+				A987EBE8210D9B2F00D0C07E /* Sources */,
+				A987EBE9210D9B2F00D0C07E /* Frameworks */,
+				A987EBEA210D9B2F00D0C07E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhysicsVehicle iOS";
+			productName = "ios-spritekit-physics-racing iOS";
+			productReference = A987EBEC210D9B2F00D0C07E /* PhysicsVehicle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A987EBFD210D9B2F00D0C07E /* PhysicsVehicle macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A987EC15210D9B2F00D0C07E /* Build configuration list for PBXNativeTarget "PhysicsVehicle macOS" */;
+			buildPhases = (
+				A987EBFA210D9B2F00D0C07E /* Sources */,
+				A987EBFB210D9B2F00D0C07E /* Frameworks */,
+				A987EBFC210D9B2F00D0C07E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhysicsVehicle macOS";
+			productName = "ios-spritekit-physics-racing macOS";
+			productReference = A987EBFE210D9B2F00D0C07E /* PhysicsVehicle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A987EBDF210D9B2E00D0C07E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = "Astemir Eleev";
+				TargetAttributes = {
+					A987EBEB210D9B2F00D0C07E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1330;
+					};
+					A987EBFD210D9B2F00D0C07E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = A987EBE2210D9B2E00D0C07E /* Build configuration list for PBXProject "PhysicsVehicle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A987EBDE210D9B2E00D0C07E;
+			productRefGroup = A987EBED210D9B2F00D0C07E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A987EBEB210D9B2F00D0C07E /* PhysicsVehicle iOS */,
+				A987EBFD210D9B2F00D0C07E /* PhysicsVehicle macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A987EBEA210D9B2F00D0C07E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A987EBF5210D9B2F00D0C07E /* Main.storyboard in Resources */,
+				A987EC08210D9B2F00D0C07E /* Actions.sks in Resources */,
+				A987EBF8210D9B2F00D0C07E /* LaunchScreen.storyboard in Resources */,
+				A987EC19210D9BA600D0C07E /* .gitignore in Resources */,
+				A98C56CF217F730E00EB3826 /* BalistaVehicle.sks in Resources */,
+				A987EC25210E126200D0C07E /* Assets.xcassets in Resources */,
+				A93E9E38240E202A0047AFA4 /* GameLevel.sks in Resources */,
+				A987EC22210E124700D0C07E /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A987EBFC210D9B2F00D0C07E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A987EC1A210D9BA600D0C07E /* .gitignore in Resources */,
+				A987EC23210E124700D0C07E /* GameScene.sks in Resources */,
+				A987EC06210D9B2F00D0C07E /* Main.storyboard in Resources */,
+				A987EC09210D9B2F00D0C07E /* Actions.sks in Resources */,
+				A987EC26210E126200D0C07E /* Assets.xcassets in Resources */,
+				A98C56D0217F730E00EB3826 /* BalistaVehicle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A987EBE8210D9B2F00D0C07E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91FCF3E2174783D000225E5 /* JeepWheelSuspensionBuilder.swift in Sources */,
+				A99156B021736D2D00CFB514 /* ChasisNode.swift in Sources */,
+				A9FE2AB22177618E00383D0F /* HumveeWheelsLocationBuilder.swift in Sources */,
+				A9844437217A03AD00CD5B09 /* SKVehicleBuilder.swift in Sources */,
+				A984443E217A129A00CD5B09 /* BalistaChasisBuilder.swift in Sources */,
+				A99156AD21736D1300CFB514 /* Vehicle.swift in Sources */,
+				A987EC28210E130900D0C07E /* VehicleJeep.swift in Sources */,
+				A9FE2AA521774E3A00383D0F /* WheelLocation.swift in Sources */,
+				A91FCF48217484BA000225E5 /* WheelNode.swift in Sources */,
+				A91FCF4521747AE5000225E5 /* JeepChasisBuilder.swift in Sources */,
+				A99156B321736D4200CFB514 /* PhysicsWheel.swift in Sources */,
+				A983E6D52179B837009DBA43 /* RopeNode.swift in Sources */,
+				A99156A72173422800CFB514 /* ChasisBuilder.swift in Sources */,
+				A9844447217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift in Sources */,
+				A9FE2AAC217760EA00383D0F /* HumveeWheelBuilder.swift in Sources */,
+				A95C9EFB2178DB440089548C /* SchoolBusChasisBuilder.swift in Sources */,
+				A984443B217A127400CD5B09 /* BalistaEngineConfiguration.swift in Sources */,
+				A99156BC21736E4B00CFB514 /* VehicleAbstractFactory.swift in Sources */,
+				A9300AE1216E5ECF00AF1C06 /* WheelBuilder.swift in Sources */,
+				A987EBF2210D9B2F00D0C07E /* GameViewController.swift in Sources */,
+				A9FE2AA92177608600383D0F /* HumveeWheelSuspensionBuilder.swift in Sources */,
+				A987EC1C210D9DAE00D0C07E /* VehicleProtocol.swift in Sources */,
+				A9FE2AB5217765DE00383D0F /* Engine.swift in Sources */,
+				A987EC1F210E123900D0C07E /* GameScene.swift in Sources */,
+				A983E6D22179B7AC009DBA43 /* ChainNode.swift in Sources */,
+				A91FCF3A217475BC000225E5 /* WheelFactory.swift in Sources */,
+				A95C9EEE2178DAA30089548C /* JeepEngineConfiguration.swift in Sources */,
+				A95C9EF82178DB130089548C /* SchoolBusEngineConfiguration.swift in Sources */,
+				A9FE2A9F21774A0700383D0F /* WheelsLocationBuilder.swift in Sources */,
+				A9FE2AA221774AAC00383D0F /* JeepWheelsLocationBuilder.swift in Sources */,
+				A91FCF3021747560000225E5 /* WheelSuspensionBuilder.swift in Sources */,
+				A95C9EF02178DAC50089548C /* EngineConfiguration.swift in Sources */,
+				A99156B621736D5300CFB514 /* WheelSuspension.swift in Sources */,
+				A91FCF3421747592000225E5 /* ChasisFactory.swift in Sources */,
+				A9FE2AAF2177611600383D0F /* HumveeChasisBuilder.swift in Sources */,
+				A9844441217A130200CD5B09 /* BalistaWheelBuilder.swift in Sources */,
+				A9844444217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift in Sources */,
+				A968FFB821808300007D8A8A /* SoftPhysicsWheel.swift in Sources */,
+				A987EC2C210E133300D0C07E /* TrigonometryExtnesions.swift in Sources */,
+				A91FCF36217475A2000225E5 /* SuspentionFactory.swift in Sources */,
+				A9062577212052BE00324732 /* VehicleHumvee.swift in Sources */,
+				A95C9EF42178DAE80089548C /* HumveeEngineConfiguration.swift in Sources */,
+				A95C9F012178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift in Sources */,
+				A91FCF42217479AC000225E5 /* JeepWheelBuilder.swift in Sources */,
+				A99156B921736E2200CFB514 /* VehicleType.swift in Sources */,
+				A987EBF0210D9B2F00D0C07E /* AppDelegate.swift in Sources */,
+				A95C9F042178DC720089548C /* SchoolBusWheelsLocationBuilder.swift in Sources */,
+				A95C9EFE2178DBD50089548C /* SchoolBusWheelBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A987EBFA210D9B2F00D0C07E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91FCF3F2174783D000225E5 /* JeepWheelSuspensionBuilder.swift in Sources */,
+				A99156B121736D2D00CFB514 /* ChasisNode.swift in Sources */,
+				A95C9EF12178DAD40089548C /* EngineConfiguration.swift in Sources */,
+				A9844438217A03AD00CD5B09 /* SKVehicleBuilder.swift in Sources */,
+				A984443F217A129A00CD5B09 /* BalistaChasisBuilder.swift in Sources */,
+				A9FE2AB32177618E00383D0F /* HumveeWheelsLocationBuilder.swift in Sources */,
+				A91FCF37217475A6000225E5 /* ChasisFactory.swift in Sources */,
+				A99156AE21736D2000CFB514 /* Vehicle.swift in Sources */,
+				A9FE2AA621774E3A00383D0F /* WheelLocation.swift in Sources */,
+				A91FCF49217484BA000225E5 /* WheelNode.swift in Sources */,
+				A91FCF4621747AE5000225E5 /* JeepChasisBuilder.swift in Sources */,
+				A983E6D62179B837009DBA43 /* RopeNode.swift in Sources */,
+				A987EC29210E130900D0C07E /* VehicleJeep.swift in Sources */,
+				A9844448217A136800CD5B09 /* BalistaWheelsLocationBuilder.swift in Sources */,
+				A99156B421736D4200CFB514 /* PhysicsWheel.swift in Sources */,
+				A95C9EFC2178DB440089548C /* SchoolBusChasisBuilder.swift in Sources */,
+				A984443C217A127400CD5B09 /* BalistaEngineConfiguration.swift in Sources */,
+				A9FE2AAD217760EA00383D0F /* HumveeWheelBuilder.swift in Sources */,
+				A99156A82173423000CFB514 /* ChasisBuilder.swift in Sources */,
+				A91FCF3C217475D3000225E5 /* WheelSuspensionBuilder.swift in Sources */,
+				A99156BD21736E4B00CFB514 /* VehicleAbstractFactory.swift in Sources */,
+				A9FE2AAA2177608600383D0F /* HumveeWheelSuspensionBuilder.swift in Sources */,
+				A987EC03210D9B2F00D0C07E /* GameViewController.swift in Sources */,
+				A9FE2AB6217765DE00383D0F /* Engine.swift in Sources */,
+				A983E6D32179B7AC009DBA43 /* ChainNode.swift in Sources */,
+				A987EC20210E123900D0C07E /* GameScene.swift in Sources */,
+				A9300AE6216E5F5300AF1C06 /* VehicleProtocol.swift in Sources */,
+				A95C9EF92178DB130089548C /* SchoolBusEngineConfiguration.swift in Sources */,
+				A9FE2AA021774A0700383D0F /* WheelsLocationBuilder.swift in Sources */,
+				A9FE2AA321774AAC00383D0F /* JeepWheelsLocationBuilder.swift in Sources */,
+				A987EC2D210E133300D0C07E /* TrigonometryExtnesions.swift in Sources */,
+				A91FCF38217475A8000225E5 /* SuspentionFactory.swift in Sources */,
+				A95C9EF22178DAD80089548C /* JeepEngineConfiguration.swift in Sources */,
+				A99156B721736D5300CFB514 /* WheelSuspension.swift in Sources */,
+				A9FE2AB02177611600383D0F /* HumveeChasisBuilder.swift in Sources */,
+				A9844442217A130200CD5B09 /* BalistaWheelBuilder.swift in Sources */,
+				A9844445217A132E00CD5B09 /* BalistaWheelSuspensionBuilder.swift in Sources */,
+				A968FFB921808300007D8A8A /* SoftPhysicsWheel.swift in Sources */,
+				A9062578212052BE00324732 /* VehicleHumvee.swift in Sources */,
+				A987EC01210D9B2F00D0C07E /* AppDelegate.swift in Sources */,
+				A99156BA21736E2200CFB514 /* VehicleType.swift in Sources */,
+				A95C9EF52178DAE80089548C /* HumveeEngineConfiguration.swift in Sources */,
+				A95C9F022178DC310089548C /* SchoolBusWheelSuspensionBuilder.swift in Sources */,
+				A91FCF43217479AC000225E5 /* JeepWheelBuilder.swift in Sources */,
+				A91FCF3B217475BC000225E5 /* WheelFactory.swift in Sources */,
+				A94842B821734181009AA789 /* WheelBuilder.swift in Sources */,
+				A95C9F052178DC720089548C /* SchoolBusWheelsLocationBuilder.swift in Sources */,
+				A95C9EFF2178DBD50089548C /* SchoolBusWheelBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A987EBF3210D9B2F00D0C07E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A987EBF4210D9B2F00D0C07E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A987EBF6210D9B2F00D0C07E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A987EBF7210D9B2F00D0C07E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A987EC04210D9B2F00D0C07E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A987EC05210D9B2F00D0C07E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A987EC10210D9B2F00D0C07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A987EC11210D9B2F00D0C07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A987EC13210D9B2F00D0C07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-ios";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3K58FE38R;
+				INFOPLIST_FILE = "$(SRCROOT)/PhysicsVehicle iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.physics-vehicle";
+				PRODUCT_NAME = PhysicsVehicle;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A987EC14210D9B2F00D0C07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-ios";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3K58FE38R;
+				INFOPLIST_FILE = "$(SRCROOT)/PhysicsVehicle iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.physics-vehicle";
+				PRODUCT_NAME = PhysicsVehicle;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A987EC16210D9B2F00D0C07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-mac";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/PhysicsVehicle macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.ios-spritekit-physics-racing";
+				PRODUCT_NAME = PhysicsVehicle;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A987EC17210D9B2F00D0C07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-mac";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/PhysicsVehicle macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.ios-spritekit-physics-racing";
+				PRODUCT_NAME = PhysicsVehicle;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A987EBE2210D9B2E00D0C07E /* Build configuration list for PBXProject "PhysicsVehicle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A987EC10210D9B2F00D0C07E /* Debug */,
+				A987EC11210D9B2F00D0C07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A987EC12210D9B2F00D0C07E /* Build configuration list for PBXNativeTarget "PhysicsVehicle iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A987EC13210D9B2F00D0C07E /* Debug */,
+				A987EC14210D9B2F00D0C07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A987EC15210D9B2F00D0C07E /* Build configuration list for PBXNativeTarget "PhysicsVehicle macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A987EC16210D9B2F00D0C07E /* Debug */,
+				A987EC17210D9B2F00D0C07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A987EBDF210D9B2E00D0C07E /* Project object */;
+}
